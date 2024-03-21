@@ -1,9 +1,9 @@
 
-###  DATE: 21/03/2024
+##  DATE: 21/03/2024
 
-###  NAME: PRIYANKA K
-###  ROLL NO : 212223230162
-###  DEPARTMENT: ARTIFICIAL INTELLIGENCE AND DATA SCIENCE
+## NAME: PRIYANKA K
+##  ROLL NO : 212223230162
+##  DEPARTMENT: ARTIFICIAL INTELLIGENCE AND DATA SCIENCE
 # Experiment-no-6-DC-Motor-Speed-Control-Using-Arduino
 ### AIM : To control the speed and the direction of a DC motor using L293D driver ic( H- bridge)
 
