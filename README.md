@@ -31,14 +31,44 @@ TABLE-01 EXITATION TABLE FOR H BRIDGE
 
 As shown in the circuit diagram we need only 3 Arduino terminal pins, pin 8 is for the push button which toggles the motor direction of rotation. Pins 9 and 10 are PWM signal outputs, at any time there is only 1 active PWM, this allows us to control the direction as well as the speed by varying the duty cycle of the PWM signal. The active PWM pin decides the motor direction of rotation (one at a time, the other output is logic 0).
 
-### PRGORAM 
+### PRGORAM :
+```
+int enable=6;
+int input1=3;
+int input2=4;
 
-### OUTPUT
+void setup()
+{
+  pinMode(enable, OUTPUT);
+  pinMode(input1, OUTPUT);
+  pinMode(input2, OUTPUT);
+}
 
-### GRAPH AND TABULATION 
+void loop()
+{
+  analogWrite(enable, 255);
+  delay(1000); // Wait for 1000 millisecond(s)
+  digitalWrite(input1, HIGH);
+  digitalWrite(input2, LOW);
+  delay(7000); // Wait for 7000 millisecond(s)
+  digitalWrite(input1, LOW);
+  digitalWrite(input2, HIGH);
+  delay(7000); // Wait for 7000 millisecond(s
+
+}
+```
+### OUTPUT:
+## Circuit Diagram:
+![image](https://github.com/Priyanka1846/Experiment-no-7-DC-Motor-Speed-Control-Using-Arduino/assets/139425809/292acecc-65df-44c9-b6df-fad042096601)
+## Schematic Diagram:
+![image](https://github.com/Priyanka1846/Experiment-no-7-DC-Motor-Speed-Control-Using-Arduino/assets/139425809/92f8a31b-140f-495c-8ee2-c485a5107afa)
+### GRAPH:
+![image](https://github.com/Priyanka1846/Experiment-no-7-DC-Motor-Speed-Control-Using-Arduino/assets/139425809/9f7f4520-d360-4838-a0d3-106cb8dde839)
+## TABULATION :
+![image](https://github.com/Priyanka1846/Experiment-no-7-DC-Motor-Speed-Control-Using-Arduino/assets/139425809/737d5d72-b973-4df6-adbb-2649c48c604f)
 
 
 
 
-### RESULTS AND DISCUSSION 
+### RESULTS AND DISCUSSION :
 
